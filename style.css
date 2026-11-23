@@ -1,0 +1,395 @@
+
+:root {
+    --primary: brown-dark;
+    --primary-dark: black;
+    --accent: light brown;
+    --background: light gray;
+    --surface: white;
+    --text: black;
+    --muted: gray;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    background: gray;
+    color: black;
+    line-height: 1.7;
+}
+
+.navbar {
+    background: green;
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    margin: 0 4px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f0c98d !important;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+        linear-gradient(rgba(25, 20, 20, 0.55), rgba(25, 20, 20, 0.65)),
+        url("Basotho_highland.jpg") center/cover no-repeat;
+}
+
+.hero-content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.hero h1 {
+    max-width: 760px;
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 1.1rem;
+}
+
+.page-header {
+    padding: 80px 0;
+    color: white;
+    background:
+        linear-gradient(135deg, rgba(61, 48, 48, 0.88), rgba(89, 72, 72, 0.72));
+    background-color: black;
+}
+
+.page-header h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 750;
+}
+
+.section-title {
+    color: brown;
+    font-weight: 750;
+    margin-bottom: 18px;
+}
+
+.card {
+    border: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: black;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.btn-primary {
+    background: brown;
+    border-color: brown;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: black;
+    border-color: black;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 10px 18px;
+}
+
+.info-card {
+    height: 100%;
+    padding: 28px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.info-card h3,
+.info-card h2 {
+    color: brown;
+    font-weight: 700;
+}
+
+.cta-section {
+    color: white;
+    background: linear-gradient(135deg, brown, black);
+}
+
+.site-footer {
+    margin-top: 20px;
+    color: white;
+    background: black;
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d5d5d5;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: orange;
+    box-shadow: 0 0 0 0.2rem rgba(198, 155, 99, 0.2);
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.gallery-image img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover img {
+    transform: scale(1.05);
+}
+
+body,
+.card,
+.info-card {
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+a {
+    color: brown;
+}
+
+.dark-mode a:not(.btn):not(.nav-link):not(.navbar-brand):not(.tile) {
+    color: #e4bd86;
+}
+
+.site-footer a {
+    color: #f0c98d !important;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.skip-link {
+    position: absolute;
+    z-index: 2000;
+    padding: 8px 14px;
+    background: white;
+}
+
+.navbar.sticky-top {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stats-strip {
+    padding: 28px 0;
+    color: white;
+    background: black;
+}
+
+.stats-strip strong {
+    display: block;
+    font-size: 1.8rem;
+    color: #f0c98d;
+}
+
+.stats-strip span {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.tile {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tile img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.tile:hover img {
+    transform: scale(1.07);
+}
+
+.tile span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 36px 16px 14px;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.78));
+}
+
+.info-table th {
+    width: 35%;
+    color: brown;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top[hidden] {
+    display: none;
+}
+
+.card .btn-outline-secondary {
+    --bs-btn-padding-y: 0.2rem;
+}
+
+#destinationPreview img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+body.dark-mode {
+    --background: #181818;
+    --surface: #262626;
+    --text: #f1f1f1;
+    --muted: #bdbdbd;
+}
+
+.dark-mode .section-title,
+.dark-mode .card-title,
+.dark-mode .info-card h2,
+.dark-mode .info-card h3 {
+    color: #e4bd86;
+}
+
+.dark-mode .card,
+.dark-mode .info-card {
+    color: black;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+    color: black;
+    background-color: #333333;
+    border-color: #555555;
+}
+
+.dark-mode .accordion-item,
+.dark-mode .accordion-button {
+    color: black;
+    background-color: white;
+}
+
+.dark-mode .accordion-button:not(.collapsed) {
+    color: #e4bd86;
+}
+
+.dark-mode .info-table th {
+    color: #e4bd86;
+}
+
+.dark-mode .page-header {
+    background-blend-mode: normal;
+}
+
+.dark-mode .gallery-filter.btn-outline-secondary {
+    color: #ddd;
+    border-color: #777;
+}
+
+.dark-mode .text-muted {
+    color: #c1c1c1 !important;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        min-height: 430px;
+    }
+
+    .hero-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .gallery-image img {
+        height: 180px;
+    }
+
+    .info-card {
+        padding: 22px;
+    }
+
+    .page-header {
+        padding: 45px 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

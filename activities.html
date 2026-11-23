@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities | Discover Lesotho</title>
+    <meta name="description" content="Hiking, horse riding, culture, photography and snow sports in Lesotho. Build your own trip shortlist.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="visually-hidden-focusable skip-link" href="#main">Skip to content</a>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Discover Lesotho</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="activities.html" aria-current="page">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button id="themeToggle" class="btn btn-outline-light ms-lg-3" type="button">Dark mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header" style="--header-img: url('images/Afriski.jpg')">
+        <div class="container">
+            <h1>Things to Do in Lesotho</h1>
+            <p class="mb-0">Find your next adventure in the mountain kingdom.</p>
+        </div>
+    </header>
+
+    <main id="main" class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="hiking.jpg" class="card-img-top" alt="Hikers with backpacks walking along a grassy mountain ridge toward tall cliffs" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title h4">Hiking and Trekking</h2>
+                        <p class="card-text">Explore mountain trails and enjoy panoramic views. Plan your route and check local weather before departing.</p>
+                        <p class="small text-muted mb-3">Best time: All year</p>
+                        <button class="btn btn-primary add-activity mt-auto" type="button" data-activity="Hiking and Trekking">Add to My Trip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="horse.jpg" class="card-img-top" alt="Rider on a chestnut horse on a dry highland slope" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title h4">Horse Riding</h2>
+                        <p class="card-text">Experience the highlands on horseback with a reputable local guide.</p>
+                        <p class="small text-muted mb-3">Best time: Spring to autumn</p>
+                        <button class="btn btn-primary add-activity mt-auto" type="button" data-activity="Horse Riding">Add to My Trip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="Thaba_busiu.jpg" class="card-img-top" alt="Thaba Bosiu Cultural Village" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title h4">Cultural Experiences</h2>
+                        <p class="card-text">Learn about Basotho traditions, crafts, music, food and community life.</p>
+                        <p class="small text-muted mb-3">Best time: All year</p>
+                        <button class="btn btn-primary add-activity mt-auto" type="button" data-activity="Cultural Experiences">Add to My Trip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="Katse_dam.jpg" class="card-img-top" alt="Katse Dam and green hills" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title h4">Photography</h2>
+                        <p class="card-text">Capture mountains, valleys, rivers and memorable moments from your trip.</p>
+                        <p class="small text-muted mb-3">Best time: Summer</p>
+                        <button class="btn btn-primary add-activity mt-auto" type="button" data-activity="Photography">Add to My Trip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="Afriski.jpg" class="card-img-top" alt="Afriski under snow" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title h4">Snow Sports</h2>
+                        <p class="card-text">Visit Afriski during suitable winter conditions for seasonal snow activities.</p>
+                        <p class="small text-muted mb-3">Best time: Jun to Aug</p>
+                        <button class="btn btn-primary add-activity mt-auto" type="button" data-activity="Snow Sports">Add to My Trip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="Liphofung.jpg" class="card-img-top" alt="Liphofung Cave rock shelter" loading="lazy">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title h4">Sightseeing</h2>
+                        <p class="card-text">Visit dams, waterfalls, caves and historical landmarks across the country.</p>
+                        <p class="small text-muted mb-3">Best time: All year</p>
+                        <button class="btn btn-primary add-activity mt-auto" type="button" data-activity="Sightseeing">Add to My Trip</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="cta-section mt-5 p-4 rounded" aria-labelledby="shortlistTitle">
+            <h2 id="shortlistTitle">My Trip Shortlist <span id="tripCount" class="badge bg-light text-dark align-middle fs-6">0</span></h2>
+            <p>Select activities above to build your personal shortlist. It is saved in this browser.</p>
+            <p id="tripNotice" class="small fw-semibold" aria-live="polite"></p>
+            <ul id="tripList" class="mb-3">
+                <li>No activities selected yet.</li>
+            </ul>
+            <a href="contact.html" class="btn btn-light me-2">Plan This Trip</a>
+            <button id="clearTrip" class="btn btn-outline-light" type="button">Clear Shortlist</button>
+        </section>
+
+        <section class="mt-5">
+            <h2 class="section-title">Travel Tips</h2>
+            <div class="accordion" id="travelTips">
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tipOne" aria-expanded="true" aria-controls="tipOne">Weather and Clothing</button></h3>
+                    <div id="tipOne" class="accordion-collapse collapse show" data-bs-parent="#travelTips">
+                        <div class="accordion-body">Mountain weather can change quickly. Bring warm layers, comfortable footwear and rain protection.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tipTwo" aria-expanded="false" aria-controls="tipTwo">Safety and Transport</button></h3>
+                    <div id="tipTwo" class="accordion-collapse collapse" data-bs-parent="#travelTips">
+                        <div class="accordion-body">Check road conditions, use suitable transport and consider a local guide for remote routes.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tipThree" aria-expanded="false" aria-controls="tipThree">Respect Local Culture</button></h3>
+                    <div id="tipThree" class="accordion-collapse collapse" data-bs-parent="#travelTips">
+                        <div class="accordion-body">Ask permission before photographing people and respect community customs and private property.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer p-4 p-md-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h2 class="h5">Discover Lesotho</h2>
+                    <p class="mb-0 small">Explore the Kingdom in the Sky: mountains, waterfalls, dams, caves and the warm culture of the Basotho.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="h6 text-uppercase">Explore</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h2 class="h6 text-uppercase">Plan</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li><a href="about.html">About Lesotho</a></li>
+                        <li><a href="contact.html">Contact and trip planning</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-light opacity-25 my-4">
+            <p class="text-center small mb-0">&copy; 2026 Discover Lesotho Tourism &middot; Demonstration website</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="btn btn-primary back-to-top" type="button" aria-label="Back to top" hidden>&uarr;</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
